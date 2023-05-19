@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #f6d7b0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.markdown-heading,
+.preview-heading {
+  margin: 10px 0px 15px 0px;
+  color: #a8bbe1;
+}
+
+#editor {
+  background-color: #fbe4c9;
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.3s ease; /* Add a transition for smooth animation */
+}
+
+#editor:focus {
+  /* Add styles for enlarging the textarea on focus */
+  transform: scale(1.01);
+}
+
+#preview {
+  background-color: #fbe4c9;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+#preview code {
+  background-color: whitesmoke;
+  border-radius: 4px;
+  padding: 5px 0px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 1600px) {
+  #editor,
+  #preview {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  #editor,
+  #preview {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  #editor,
+  #preview {
+    width: 100%;
+  }
+}
